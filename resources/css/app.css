@@ -9,3 +9,32 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+.accordion {
+  max-width: 600px;
+  
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.accordion-item + .accordion-item {
+  border-top: 1px solid #ddd;
+}
+
+.accordion-header {
+  padding: 14px;
+  cursor: pointer;
+  background: #f7f7f7;
+  font-weight: 600;
+}
+
+.accordion-header:hover {
+  background: #eee;
+}
+
+.accordion-body {
+  display: none;
+  padding: 14px;
+  background: #fff;
+}
+

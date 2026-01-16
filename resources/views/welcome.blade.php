@@ -21,7 +21,7 @@
     </head>
     <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
         
-        <header class="w-full lg:max-w-4xl max-w-[335px] text-sm mb-6 ">
+        <header class="w-full text-sm mb-6 ">
             {{-- not-has-[nav]:hidden --}}
             {{-- @if (Route::has('login'))
                 <nav class="flex items-center justify-end gap-4">
@@ -50,70 +50,159 @@
                     @endauth
                 </nav>
             @endif --}}
-            <ul class="flex items-center justify-center gap-6 text-center">
-                <li>
-                    <a href="#about">About Us</a>
-                </li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+            <div class="flex justify-center items-center gap-60">
+                <div class="text-lg w-32">
+                        Technocrats Studio
+                    
+                </div>
+                <div>
+                    <ul class="flex items-center justify-center gap-6 text-center font-medium text-lg">
+                        <li>
+                            <a class="" href="#about">About Us</a>
+                        </li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <button>
+                    D
+                </button>
+            </div>
             
         </header>
         
         <div class="flex items-center justify-center flex-col w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
-            <main class="max-w-[800px] w-full  lg:max-w-4xl ">
-                <section>
-                    <h1 class="text-5xl font-bold">
-                        Empowering Innovation, Crafting Excellence: Welcome to Technocrats Studio
+            <main class="max-w-7xl w-full  ">
+                <section class="py-60  text-center flex flex-col items-center justify-center" id="home">
+                    <h1 class="text-6xl font-bold">
+                        Empowering Innovation, Crafting Excellence
                     </h1>
-                    <p>At Technocrats Studio, we are dedicated to pushing the boundaries of what's possible in technology and design. Our team of experts is committed to delivering innovative solutions that drive growth and success for our clients.</p>
-                    <button class="bg-blue-500 text-white px-3 py-2 rounded">
+                    <p class="my-6 text-lg w-175 text-gray-500  text-center">At Technocrats Studio, we are dedicated to pushing the boundaries of what's possible in technology and design. Our team of experts is committed to delivering innovative solutions that drive growth and success for our clients.</p>
+                    <a class="bg-blue-500 text-white px-3 py-2 rounded">
                         Get Started
-                    </button>
+                </a>
                 </section>
-                <section class="mt-10" id="about">
-                    <h2 class="text-center">About Technocrats Studio</h2>
-                    <h1 class="text-7xl font-bold">Transforming Ideas into Reality</h1>
-                    <p>Technocrats Studio is a leading technology company specializing in innovative solutions for businesses across various industries. Our mission is to empower organizations through cutting-edge technology and design.</p>
+                <section class="mt-10 text-center pb-140" id="about">
+                    <h2 class="text-center text-blue-500 text-2xl font-medium">About Technocrats Studio</h2>
+                    <h1 class="text-8xl font-bold m-5">Transforming Ideas into Reality</h1>
+                    <p class="text-xl font-light">Technocrats Studio is a leading technology company specializing in innovative solutions for businesses across various industries. Our mission is to empower organizations through cutting-edge technology and design. </p>
                 </section>
-                <section class="mt-10" id="services">
-                    <h2>Services</h2>
-                    <h1 class="text-3xl font-bold">Driving Digital Transformation with Innovative Solutions</h1>
-                    <p>Our comprehensive suite of services is designed to help businesses thrive in the digital age.</p>
+                <section class="mt-10 flex flex-col items-center justify-center text-center py-20" id="services">
+                    <h2 class="text-center text-blue-500 text-2xl font-medium">Services</h2>
+                    <h1 class="text-4xl font-bold w-140 mt-2 mb-4">Driving Digital Transformation with Innovative Solutions</h1>
+                    <p class="text-gray-500 text-xl w-120 mb-16">Our comprehensive suite of services is designed to help businesses thrive in the digital age.</p>
+                    <div class="grid-cols-3 grid gap-x-4 gap-y-4 ">
+                        <div class="border rounded-xl border-gray-300 p-6">
+                            <h1>Gambar</h1>
+                            <h6 class="font-bold text-2xl my-3">AI & ML Development</h6>
+                            <p class="w-80 text-gray-500">Leverage the power of artificial intelligence and machine learning to gain insights, automate processes, and enhance decision-making.</p>
+                        </div>
+                                                <div class="border rounded-xl border-gray-300 p-6 ">
+                            <h1>Gambar</h1>
+                            <h6 class="font-bold text-2xl my-3">IoT Solutions</h6>
+                            <p class="w-80 text-gray-500">Connect and manage your devices seamlessly with our comprehensive IoT solutions.</p>
+                        </div>
+                                                <div class="border rounded-xl border-gray-300 p-6 ">
+                            <h1>Gambar</h1>
+                            <h6 class="font-bold text-2xl my-3">Software Development</h6>
+                            <p class="w-80 text-gray-500">Custom software solutions tailored to your business needs, ensuring scalability and performance.</p>
+                        </div>
+                                                <div class="border rounded-xl border-gray-300 p-6 ">
+                            <h1>Gambar</h1>
+                            <h6 class="font-bold text-2xl my-3">Smart Office Digitalization</h6>
+                            <p class="w-80 text-gray-500">Transform your office environment with our smart digitalization solutions.</p>
+                        </div>
+                                                <div class="border rounded-xl border-gray-300 p-6 ">
+                            <h1>Gambar</h1>
+                            <h6 class="font-bold text-2xl my-3">IT Consultant</h6>
+                            <p class="w-80 text-gray-500">Expert guidance and strategic advice to optimize your IT infrastructure and operations.</p>
+                        </div>
+                                                <div class="border rounded-xl border-gray-300 p-6 ">
+                            <h1>Gambar</h1>
+                            <h6 class="font-bold text-2xl my-3">Digital Marketing</h6>
+                            <p class="w-80 text-gray-500">Comprehensive digital marketing strategies to boost your online presence and drive growth.</p>
+                        </div>
+                                                <div class="border rounded-xl border-gray-300 p-6  col-span-3 text-center flex flex-col items-center justify-center">
+                            <h1>Gambar</h1>
+                            <h6 class="font-bold text-2xl my-3">Data Engineering</h6>
+                            <p class="w-96 text-gray-500">Leverage the power of artificial intelligence and machine learning to gain insights, automate processes, and enhance decision-making.</p>
+                        </div>
+                    </div>
                 </section>
-                <section class="mt-10" id="projects">
-                    <h2>Projects</h2>
-                    <h1 class="text-3xl font-bold">Innovative Solutions for Your Business </h1>
-                    <p>Explore our portfolio of successful projects and see how we've helped businesses achieve their goals through technology.</p>
+                <section class="py-96 mt-10 " id="projects">
+                    <div class="flex gap-40">
+                        <div>
+
+                            <h2 class="text-blue-500 text-2xl font-medium">Projects</h2>
+                            <h1 class="w-96 text-4xl font-bold">Innovative Solutions for Your Business </h1>
+                        </div>
+                        <div>
+                            <p class="text-gray-500 text-lg">Explore our portfolio of successful projects and see how we've helped businesses achieve their goals through technology. From  </p>
+                        </div>
+                    </div>
                 </section>
                 <section class="mt-10" id="contact">
-                    <h1 class="text-3xl font-bold">Let's Get Started</h1>
-                    <p>We're excited to collaborate with you on your next project. Contact us today to discuss how we can help bring your vision to life.</p>
-                    <p>Instagram</p>
-                    <p>Follow us for updates and insights. @technocrats_academy</p>
-                    <p>WhatsApp</p>
-                    <p>Chat with us directly. +6285212345678</p>
-                    <p>Email</p>
-                    <p>For any inquiries, please reach out to us at info@technocrats.studio</p>
-                    <p>Location</p>
-                    <p>Visit us at: </p>
+                    <div class="flex  justify-center items-start gap-10">
+                        <div class="w-1/2">
+                            <h1 class="text-3xl font-bold mb-5">Let's Get Started</h1>
+                            <p class="text-gray-500 text-xl">We're excited to collaborate with you on your next project. Contact us today to discuss how we can help bring your vision to life.</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-blue-500 text-2xl font-bold"> Get in touch with us</p>
+                            <p class="font-bold text-xl">Instagram</p>
+                            <p class="text-lg">Follow us for updates and insights. @technocrats_academy</p>
+                            <p class="font-bold text-xl">WhatsApp</p>
+                            <p class="text-lg">Chat with us directly. +6285212345678</p>
+                            <p class="font-bold text-xl">Email</p>
+                            <p class="text-lg">For any inquiries, please reach out to us at info@technocrats.studio</p>
+                            <p class="font-bold text-xl">Location</p>
+                            <p class="text-lg">Visit us at: </p>
+                        </div>
+                    </div>
                 </section>
-                <section class="mt-10" id="faq">
-        
-            
-                        <h2>FAQ</h2>
-                        <h1>
-                            Common Questions Answered
+                <section class="mt-10 p-40 text-center " id="faq">
+
+                        <h2 class="text-blue-500 text-2xl font-medium">FAQ</h2>
+                        <h1 class="text-4xl font-extrabold mt-2 mb-10">
+                            Common Questions
                         </h1>
-                        <ul>
-                            <li>What services do you offer?</li>
-                            <li>How can I get started with your company?</li>
-                            <li>What is your pricing structure?</li>
-                            <li>Do you provide ongoing support after project completion?</li>
-                            <li>How long does a typical project take to complete?</li>
-                        </ul>
+                  
+                        <div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">What services do you offer?</div>
+    <div class="accordion-body">
+      <p>We offer a wide range of services including web development, mobile app development, UI/UX design, and digital marketing.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header">How can I get started with your company?</div>
+    <div class="accordion-body">
+      <p>Simply reach out to us through our contact page or email us at info@technocrats.studio. We'll get back to you within 24 hours.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header">What is your pricing structure?</div>
+    <div class="accordion-body">
+      <p>Our pricing varies depending on the scope and complexity of your project. We offer competitive rates and flexible payment options.</p>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <div class="accordion-header">Do you provide ongoing support after project completion?</div>
+    <div class="accordion-body">
+      <p>Yes, we offer ongoing support and maintenance packages to ensure your project continues to perform optimally after completion.</p>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <div class="accordion-header">How long does a typical project take to complete?</div>
+    <div class="accordion-body">
+      <p>The timeline for project completion varies based on the project's requirements. We work closely with our clients to establish realistic deadlines.</p>
+    </div>
+</div>
+
                     </section>
                 
             </main>
@@ -125,5 +214,21 @@
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+$(document).ready(function () {
+  $('.accordion-header').on('click', function () {
+    const body = $(this).next('.accordion-body');
+
+    // Close other open accordions
+    $('.accordion-body').not(body).slideUp();
+
+    // Toggle current
+    body.slideToggle();
+  });
+});
+</script>
     </body>
+
 </html>
