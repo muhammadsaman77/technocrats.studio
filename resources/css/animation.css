@@ -1,0 +1,15 @@
+.headline{
+  animation: autoShowAnimation;
+  animation-timeline: view(auto auto);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

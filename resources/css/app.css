@@ -38,3 +38,8 @@
   background: #fff;
 }
 
+#map {
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
