@@ -16,3 +16,15 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+
+$('#menu').on('click', function () {
+  $('#navbar').toggleClass('max-md:hidden');
+
+  const icon = $(this).find('svg').attr('data-lucide') === 'menu'
+    ? 'x'
+    : 'menu';
+
+  $(this).html(`<i data-lucide="${icon}" class="text-black"></i>`);
+  lucide.createIcons();
+});

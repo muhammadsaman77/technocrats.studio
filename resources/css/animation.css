@@ -1,9 +1,6 @@
-.headline{
-  animation: autoShowAnimation;
-  animation-timeline: view(auto auto);
-}
 
-@keyframes autoShowAnimation {
+
+@keyframes headline {
   from {
     opacity: 0;
     transform: translateY(200px) scale(0.3);
@@ -13,3 +10,56 @@
     transform: translateY(0) scale(1);
   }
 }
+
+
+@keyframes autoShowAnimationY {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes autoShowAnimationX {
+  from {
+    opacity: 0;
+    transform: translateX(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes autoShowAnimationXMinus {
+  from {
+    opacity: 0;
+    transform: translateX(-200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+
+/* .about {
+  animation: autoShowAnimationY both;
+  animation-timeline: view(80% 30%);
+} */
+/* .services {
+  animation: autoShowAnimationX both;
+  animation-timeline: view(100% 30%);
+} */
+
+/* .projects {
+  animation: autoShowAnimationXMinus both;
+  animation-timeline: view(100% 30%);
+} */
+
+/* .contact {
+  animation: autoShowAnimationX both;
+  animation-timeline: view(100% 30%);
+} */
